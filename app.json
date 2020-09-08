@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "SecureChat",
+    "slug": "securechat",
+    "privacy": "public",
+    "sdkVersion": "33.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/securechat-icon.png",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#080D22",
+      "image": "./assets/splash.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "description": ""
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.3",
+    "expo": "^33.0.0",
+    "expo-barcode-scanner": "^5.0.1",
+    "expo-permissions": "^5.0.1",
+    "firebase": "^6.3.4",
+    "react": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native-qrcode-svg": "^5.1.2",
+    "react-navigation": "^3.11.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "tweet-nacl-react-native-expo": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.1.1"
+  },
+  "private": true
+}
