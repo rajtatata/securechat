@@ -1,0 +1,13 @@
+.expo/*
+.expo-shared/*
+android/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+node_modules
+package-lock.json
