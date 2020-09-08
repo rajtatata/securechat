@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "privacy": "unlisted",
+    "name": "Secure Chat",
+    "slug": "securechat2_0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon_logo_no_background.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.rajtatata.securechat",
+      "buildNumber": "2.0.0"
+    },
+    "description": "",
+    "android": {
+      "package": "com.rajtatata.securechat",
+      "versionCode": 1,
+      "googleServicesFile": "./google-services.json"
+    },
+    "notification": {
+      "icon": "./assets/icon_logo.png"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+version: '3'
+services:
+  backend-node:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      NODE_ENV: develop
+      MONGO_URI: mongodb://root:toor@mongo-database:27017/securechat?authSource=admin
+      SERVER_PORT: 3000
+      REDIS_URL: redis://redis:6379
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - 3000:3000
+    command: "npm start"
+
+  mongo-database:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: securechat
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: toor
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo-database
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: toor
+      ME_CONFIG_BASICAUTH_USERNAME: webuser
+      ME_CONFIG_BASICAUTH_PASSWORD: webpass
+    ports:
+      - 3001:8081
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+  cdn:
+    image: nginx
+    volumes:
+      - ./uploads:/usr/share/nginx/html
+    ports:
+      - 8080:80
