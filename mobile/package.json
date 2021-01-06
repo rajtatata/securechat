@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^10.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "date-format": "^3.0.0",
     "expo": "~37.0.3",
     "expo-barcode-scanner": "~8.1.0",
